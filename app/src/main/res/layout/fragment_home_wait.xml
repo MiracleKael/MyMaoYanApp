@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cjj.MaterialRefreshLayout
+    android:id="@+id/refresh"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+        android:id="@+id/stickyListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:drawSelectorOnTop="true"
+        android:padding="16dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:fastScrollEnabled="true"
+        android:overScrollMode="never" >
+
+    </se.emilsjolander.stickylistheaders.StickyListHeadersListView>
+
+
+</com.cjj.MaterialRefreshLayout>

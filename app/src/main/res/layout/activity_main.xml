@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jiaojing.mymaoyanmovie.MainActivity">
+
+    <!--中间部分-->
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <!--底部-->
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:background="#F5F5F5"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:text="首页"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/home_button_selector"/>
+        <RadioButton
+            android:id="@+id/rb_cinema"
+            android:text="影院"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/cinema_button_selector"/>
+        <RadioButton
+            android:id="@+id/rb_find"
+            android:text="发现"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/find_button_selector"/>
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:text="我的"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/mine_button_selector"/>
+
+    </RadioGroup>
+
+</LinearLayout>

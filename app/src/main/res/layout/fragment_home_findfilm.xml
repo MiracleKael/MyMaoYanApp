@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <!--搜索框-->
+        <include layout="@layout/fragment_top_search"></include>
+
+        <HorizontalScrollView
+            android:id="@+id/hori_scroll_first"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/ll_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="类型"
+                    android:textColor="#6A6A6A"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:id="@+id/hori_scroll_sec"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/ll_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="地区"
+                    android:textColor="#6A6A6A"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:id="@+id/hori_scroll_third"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/ll_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="年代"
+                    android:textColor="#6A6A6A"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:background="#F5F5F5"></View>
+
+
+        <!--中间gridview部分-->
+        <com.jiaojing.mymaoyanmovie.home.ui.MyGridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            android:background="#F2F2F2"
+            android:horizontalSpacing="1dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="1dp"></com.jiaojing.mymaoyanmovie.home.ui.MyGridView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:background="#F5F5F5"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="全球电影奖项"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+
+            <LinearLayout
+                android:id="@+id/ll_award"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal"></LinearLayout>
+
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F5F5F5"></View>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:drawableRight="@drawable/find_extra"
+            android:paddingLeft="140dp"
+            android:paddingRight="140dp"
+            android:text="全部奖项"
+            android:textColor="#F45E53"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

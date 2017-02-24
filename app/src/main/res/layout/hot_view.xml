@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:gravity="center"
+    android:layout_height="200dp">
+
+    <TextView
+        android:id="@+id/hot_date"
+        android:text="12月16日"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="160dp">
+
+        <ImageView
+            android:id="@+id/hot_img_film"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <ImageView
+            android:id="@+id/hot_img_xihuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/hot_img_presale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/hot_txt_flimname"
+            android:layout_below="@id/hot_img_film"
+            android:text="长城"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/hot_want_watch"
+            android:layout_below="@id/hot_txt_flimname"
+            android:text="1853049人想看"
+            android:textSize="9sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

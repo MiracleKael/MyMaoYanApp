@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_login"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#D43E37"
+            android:orientation="horizontal">
+
+            <com.jiaojing.mymaoyanmovie.mine.view.CircleImageView
+                android:id="@+id/iv_userheader"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/abe" />
+
+            <TextView
+
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableRight="@drawable/find_extra"
+                android:text="立即登录"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:drawableTop="@drawable/vi"
+                android:text="想看"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="#E6E6E6"></View>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:drawableTop="@drawable/vf"
+                android:text="看过"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="#E6E6E6"></View>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:drawableTop="@drawable/va"
+                android:text="影评"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="#E6E6E6"></View>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:drawableTop="@drawable/vh"
+                android:text="话题"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:background="#F5F5F5"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="我的订单"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:drawablePadding="3dp"
+                android:drawableRight="@drawable/find_extra"
+                android:text="全部"
+                android:textColor="#9C9C9C"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F5F5F5"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:drawableTop="@drawable/vo"
+                android:text="未消费"
+                android:textSize="14sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:drawableTop="@drawable/vn"
+                android:text="待付款"
+                android:textSize="14sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:drawableTop="@drawable/vm"
+                android:text="待评价"
+                android:textSize="14sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:drawableTop="@drawable/vc"
+                android:text="退款"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:background="#F5F5F5"></View>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawableRight="@drawable/find_extra"
+            android:padding="5dp"
+            android:text="我的消息"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F5F5F5"></View>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawableRight="@drawable/find_extra"
+            android:padding="5dp"
+            android:text="我的收藏"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F5F5F5"></View>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawableRight="@drawable/find_extra"
+            android:padding="5dp"
+            android:text="会员中心"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F5F5F5"></View>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawableRight="@drawable/find_extra"
+            android:padding="5dp"
+            android:text="我的成就"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:background="#F5F5F5"></View>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawableRight="@drawable/find_extra"
+            android:padding="5dp"
+            android:text="我的钱包"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="余额"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/find_extra"
+                android:padding="5dp"
+                android:text="0.0元"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawableRight="@drawable/find_extra"
+            android:padding="5dp"
+            android:text="优惠劵"
+            android:textSize="18sp" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawableRight="@drawable/find_extra"
+            android:padding="5dp"
+            android:text="商城"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:background="#F5F5F5"></View>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="设置"
+                android:textSize="18sp" />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mine_setting_shape"
+                android:text="new"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/find_extra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="#F5F5F5"></View>
+
+        <Button
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:text="退出"
+            android:textColor="#ffffff"
+            android:background="@drawable/quit_bg"
+            android:id="@+id/btn_loginout"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</ScrollView>

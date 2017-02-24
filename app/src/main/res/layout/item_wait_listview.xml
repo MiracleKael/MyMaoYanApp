@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/iv_wait_film_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/iv_wait_play"
+                android:src="@drawable/play"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_wait_flimname"
+                    android:text="试睡员"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/iv_wait_threeD"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/iv_hot_3d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/iv_wait_imax"
+                    android:src="@drawable/iv_hot_imax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_marginLeft="3dp"
+                    android:text="5677"
+                    android:textColor="#FFB913"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:text="人想看"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_wait_focus"
+                android:lines="1"
+                android:singleLine="true"
+                android:layout_marginTop="3dp"
+                android:text="神奇动物城，法师显超能"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_wait_showinfo"
+                android:lines="1"
+                android:singleLine="true"
+                android:layout_marginTop="3dp"
+                android:text="今天165家影院放映2090场"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/btn_wait_wish"
+                android:text="想看"
+                android:drawableLeft="@drawable/xihuan_false"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textColor="#F56653"
+                android:layout_centerInParent="true"
+                android:background="@drawable/hot_btn_buy_shape"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/btn_wait_order"
+                android:text="预售"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textColor="#4BB9F4"
+                android:layout_centerInParent="true"
+                android:background="@drawable/hot_btn_order_shape"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
